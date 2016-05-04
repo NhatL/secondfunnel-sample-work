@@ -34,6 +34,7 @@ This is quite similar to the built-in Djano REST Framework Serializers, except t
 Code sample:
 
 https://github.com/NhatL/secondfunnel-sample-work/blob/master/api/views.py#L1455
+
 https://github.com/NhatL/secondfunnel-sample-work/blob/master/api/views.py#L1543
 
 ![alt tag](http://i.imgur.com/FTvmo62.png)
@@ -57,6 +58,7 @@ Object PATCHing using a PATCH request is allowed, with options for both individu
 Code sample:
 
 https://github.com/NhatL/secondfunnel-sample-work/blob/master/api/views.py#L1479
+
 https://github.com/NhatL/secondfunnel-sample-work/blob/master/api/generics.py#L12
 
 ![alt tag](http://i.imgur.com/25IpCzP.png)
@@ -91,16 +93,24 @@ The following are some example functionality with linked code to where the funct
 
 Code sample:
 
-When the object on the page is clicked: https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L509
+When the object on the page is clicked: 
 
-The modal that's displayed when the object is clicked: https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L606
+https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L509
+
+The modal that's displayed when the object is clicked: 
+
+https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L606
 
 ![alt tag](http://i.imgur.com/eJ6j8Vv.png)
 
 ##### Adding an object to the page:
 
-When the add button is clicked: https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L1907
+When the add button is clicked: 
 
-The modal that's displayed when add button is clicked: https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L1176
+https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L1907
+
+The modal that's displayed when add button is clicked: 
+
+https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L1176
 
 ![alt tag](http://i.imgur.com/ZLMi0ZR.png)
