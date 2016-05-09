@@ -67,7 +67,9 @@ https://github.com/NhatL/secondfunnel-sample-work/blob/master/api/generics.py#L1
 
 ### 2) dashboard:
 
-The dashboard serves as a front-end application to enable employees to easily make updates and modifications to a web-page without having to touch the back-end. 
+The dashboard's primary function is to manage gift guide pages. It connects to a RESTful API system in order to display all the different tiles of a page. From the dashboard, employees can go through and make most, if not all of the wanted changes to that page.
+
+Overall, the dashboard serves as a front-end application that enables employees to easily make updates and modifications to a gift guide page without having to touch the back-end.
 
 ##### Libraries and Frameworks used:
 
@@ -88,6 +90,10 @@ The dashboard serves as a front-end application to enable employees to easily ma
 ##### Example functionality demonstration:
 
 The following are some example functionality with linked code to where the functions are executed. 
+
+##### Main dashboard page:
+
+![alt tag](http://i.imgur.com/JfC7gZE.png)
 
 ##### Editing an object on a page, with displaying default image associated with it:
 
