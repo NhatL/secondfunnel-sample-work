@@ -6,7 +6,68 @@ Special thanks to Fraser Harris and the team at SecondFunnel to allow me to uplo
 
 Main functionalities of the two apps:
 
-### 1) api:
+
+### 1) dashboard:
+
+![alt tag](http://i.imgur.com/JfC7gZE.png)
+
+The dashboard serves as a front-end application that enables employees to easily make updates and modifications to a gift guide page without having to touch the back-end. Using the tools on the page, the user can make changes about the page such as the positions of different objects, add or remove an object from the page, upload an image onto the page. 
+
+To do this it connects to a RESTful API system for all the different commands. GET, POST, PATCH requests are sent and received and the response is processed by the page and displayed as appropriate to the user.
+
+##### Libraries and Frameworks used:
+
+* JavaScript/JQuery
+* Underscore.js
+* Backbone.js
+* Marionette
+* Bootstrap
+
+##### Functionalities include:
+
+* Display all objects on a page with its pictures
+* Edit object attributes with input validation
+* Add/remove objects from the webpage from a list of items in the database
+* Upload new content to the webpage, which will be automatically uploaded to external image server and updated in the database
+* Any calls to the server is done by sending its appropriate HTTP Request to the server through the API above, and the result returned from the server is handled to see if any errors/mistakes/successes occurred.
+
+##### Example functionality demonstration:
+
+The following are some example functionality with linked code to where the functions are executed. 
+
+##### Editing an object on a page, with displaying default image associated with it:
+
+Code sample:
+
+When the object on the page is clicked: 
+
+https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L509
+
+The modal that's displayed when the object is clicked: 
+
+https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L606
+
+![alt tag](http://i.imgur.com/eJ6j8Vv.png)
+
+##### Adding an object to the page:
+
+When the add button is clicked: 
+
+https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L1907
+
+The modal that's displayed when add button is clicked: 
+
+https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L1176
+
+![alt tag](http://i.imgur.com/ZLMi0ZR.png)
+
+---
+
+### 2) api:
+
+This is the API system that the dashboard use to communicated to the Django back-end. It receives the requests from the dashboard and process them accordingly. If the user input is wrong, an error will be returned. 
+
+The API system runs on Django REST framework, with custom functions, serializers and ViewSets in order to have the functionalities needed. 
 
 ##### Libraries and Frameworks used:
 
@@ -62,61 +123,3 @@ https://github.com/NhatL/secondfunnel-sample-work/blob/master/api/views.py#L1479
 https://github.com/NhatL/secondfunnel-sample-work/blob/master/api/generics.py#L12
 
 ![alt tag](http://i.imgur.com/25IpCzP.png)
-
----
-
-### 2) dashboard:
-
-The dashboard's primary function is to manage gift guide pages. It connects to a RESTful API system in order to display all the different tiles of a page. From the dashboard, employees can go through and make most, if not all of the wanted changes to that page.
-
-Overall, the dashboard serves as a front-end application that enables employees to easily make updates and modifications to a gift guide page without having to touch the back-end.
-
-##### Libraries and Frameworks used:
-
-* JavaScript/JQuery
-* Underscore.js
-* Backbone.js
-* Marionette
-* Bootstrap
-
-##### Functionalities include:
-
-* Display all objects on a page with its pictures
-* Edit object attributes with input validation
-* Add/remove objects from the webpage from a list of items in the database
-* Upload new content to the webpage, which will be automatically uploaded to external image server and updated in the database
-* Any calls to the server is done by sending its appropriate HTTP Request to the server through the API above, and the result returned from the server is handled to see if any errors/mistakes/successes occurred.
-
-##### Example functionality demonstration:
-
-The following are some example functionality with linked code to where the functions are executed. 
-
-##### Main dashboard page:
-
-![alt tag](http://i.imgur.com/JfC7gZE.png)
-
-##### Editing an object on a page, with displaying default image associated with it:
-
-Code sample:
-
-When the object on the page is clicked: 
-
-https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L509
-
-The modal that's displayed when the object is clicked: 
-
-https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L606
-
-![alt tag](http://i.imgur.com/eJ6j8Vv.png)
-
-##### Adding an object to the page:
-
-When the add button is clicked: 
-
-https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L1907
-
-The modal that's displayed when add button is clicked: 
-
-https://github.com/NhatL/secondfunnel-sample-work/blob/master/dashboard/static/tiles.js#L1176
-
-![alt tag](http://i.imgur.com/ZLMi0ZR.png)
